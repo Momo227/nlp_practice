@@ -1,7 +1,7 @@
 # データセットの準備
 mkdir 'data'
 
-cd data||
+cd data||exit
 wget http://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_multilingual_JP_v1_00.tsv.gz
 gunzip amazon_reviews_multilingual_JP_v1_00.tsv.gz
 head -5 amazon_reviews_multilingual_JP_v1_00.tsv
@@ -29,7 +29,4 @@ python train2.py
 # Lower text.
 # 0.3960, 0.3950
 
-# データセットの準備/モデルの学習・評価用関数の定義
-python preprocessing.py
-# データセットの準備（学習回数が少なかったようなのでl.44を変更）
-python utils2.py
+
