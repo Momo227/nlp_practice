@@ -19,15 +19,15 @@ python train2.py
 # 結果（教科書, 実行結果）
 # 結果は、utils.pyのl44　　clf = LogisticRegression(solver='liblinear') → clf = LogisticRegression(max_iter=10000)   と変更したファイルを使用しているため同値ではない。
 # Tokenization only.
-# 0.4010
+# 0.4010, 0.3970
 # Clean html.
-# 0.4020
+# 0.4020, 0.4110
 # Normalize number.
-# 0.3940
+# 0.3940, 0.3890
 # Base form.
-# 0.3930
+# 0.3930, 0.2370
 # Lower text.
-# 0.3960
+# 0.3960, 0.3950
 
 # データセットの準備/モデルの学習・評価用関数の定義
 python preprocessing.py
