@@ -1,7 +1,7 @@
 # データセットの準備
 mkdir 'data'
 
-cd data||exit
+cd data || exit
 wget http://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_multilingual_JP_v1_00.tsv.gz
 gunzip amazon_reviews_multilingual_JP_v1_00.tsv.gz
 head -5 amazon_reviews_multilingual_JP_v1_00.tsv
