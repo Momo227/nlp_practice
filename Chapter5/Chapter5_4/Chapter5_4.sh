@@ -14,19 +14,16 @@ head -5 amazon_reviews_multilingual_JP_v1_00.tsv
 cd ..
 
 # モデルの学習と評価
-python train2.py
+python train.py
 
-# 結果（教科書, 実行結果）
-# 結果は、utils.pyのl44　　clf = LogisticRegression(solver='liblinear') → clf = LogisticRegression(max_iter=10000)   と変更したファイルを使用しているため同値ではない。
-# Tokenization only.
-# 0.4010, 0.3970
-# Clean html.
-# 0.4020, 0.4110
-# Normalize number.
-# 0.3940, 0.3890
-# Base form.
-# 0.3930, 0.2370
-# Lower text.
-# 0.3960, 0.3950
+# 結果
+# Binary.
+# 0.8385
+# Count.
+# 0.8365
+# TF-IDF.
+# 0.8510
+# Bigram.
+# 0.8545
 
 
