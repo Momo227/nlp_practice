@@ -20,7 +20,7 @@ def main():
     x_test_vec = vectorizer.transform(x_test)
 
     # cv:何分割するか
-    # mean:平均, std:分散
+    # mean:平均, std:標準偏差
     clf = LogisticRegression(solver='liblinear')
     scores = cross_val_score(clf, x_train_vec, y_train, cv=5)
     print(scores)
