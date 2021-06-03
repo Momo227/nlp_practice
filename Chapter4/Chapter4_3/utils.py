@@ -4,6 +4,7 @@ import pandas as pd
 
 # データセットのフィルタリング
 # データを日本語のみにする（一定のアルファベット数を超えたら英文と評価し、取り除く）
+# string.printable:英文で表記できるもの
 def filter_by_ascii_rate(text, threshold=0.9):
     ascii_letters = set(string.printable)
     rate = sum(c in ascii_letters for c in text) / len(text)
